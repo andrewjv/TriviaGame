@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
+       
+        <!-- start game div -->
+        <div id="start-div">
+                <div class="jumbotron" id="start-jumbtron">
+                    <header><h1 id="title">Kobe Bryant Trivia</h1></header>
+                    <div id="start-box">
+                        <p>Enter the triangle</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- game div -->
+            <div id="game-container">
+                
+                <div class="jumbotron" id="game-jumbtron">
+                
+            <header><h1 id="title">Kobe Bryant Trivia</h1></header>
+
+            <h2 id="timer">Timer: <span id="timer-number">60 Seconds</span></h2>
+
+            <h2>What team originally drafted Kobe Bryant in the 1996 NBA Draft</h2>
+            <!-- Charlotte Hornets -->
+                <input type="radio" id="q1" value="Miami Heat">Miami Heat
+                <input type="radio" id="q1" value="Los Angeles Lakers">Los Angeles Lakers
+                <input type="radio" id="q1" value="Utah Jazz">Utah Jazz
+                <input type="radio" id="q1" value="Charlotte Hornets">Charlotte Hornets
+            
+                <!-- Lowell Merion High School -->
+            <h2>Where did Kobe Bryant play as an amateur before playing in the NBA?</h2>
+                <input type="radio" id="q2" value="University of North Carolina">Miami Heat
+                <input type="radio" id="q2" value="UCLA">Los Angeles Lakers
+                <input type="radio" id="q2" value="Lowell Merion High School">Utah Jazz
+                <input type="radio" id="q2" value="Duke University">Charlotte Hornets
+                    
+                <!-- adidas -->
+                <h2>What sportswear company endorsed Kobe Bryant his Rookie Year?</h2>
+                <input type="radio" id="q3" value="Nike">Nike
+                <input type="radio" id="q3" value="Fila">Fila
+                <input type="radio" id="q3" value="Adidas">Adidas
+                <input type="radio" id="q3" value="Reebok">Reebok
+                
+                <!-- nike -->
+                <h2>What sportswear company did Kobe move on to in 2008?</h2>
+                <input type="radio" id="q4" value="Nike">Nike
+                <input type="radio" id="q4" value="Fila">Fila
+                <input type="radio" id="q4" value="Adidas">Adidas
+                <input type="radio" id="q4" value="Reebok">Reebok
+
+                    <!-- 5 -->
+                <h2>How many championships does Kobe Bryant have?</h2>
+                <input type="radio" id="q5" value="6">6
+                <input type="radio" id="q5" value="4">4
+                <input type="radio" id="q5" value="1">1
+                <input type="radio" id="q5" value="5">5
+
+                    <!-- Black Mamba -->
+                <h2>What animal is Kobe nicknamed after?</h2>
+                <input type="radio" id="q6" value="Brown Bear">Brown Bear
+                <input type="radio" id="q6" value="Black Mamba">Black Mamba
+                <input type="radio" id="q6" value="Grey Wolf">Grey Wolf
+                <input type="radio" id="q6" value="The Leopard">The Leopard
+
+                    <!-- Italy -->
+                <h2>In what country did Kobe Bryant grow up?</h2>
+                <input type="radio" id="q7" value="Italy">Italy
+                <input type="radio" id="q7" value="France">France
+                <input type="radio" id="q7" value="Canada">Canada
+                <input type="radio" id="q7" value="Germany">Germany
+
+                    <!-- 24 -->
+                <h2>After starting off his career wearing number 8, what number did he change to in 2006?</h2>
+                <input type="radio" id="q8" value="1">1
+                <input type="radio" id="q8" value"24">24
+                <input type="radio" id="q8" value"23">23
+                <input type="radio" id="q8" value"33">33
+
+                    <!-- 81 -->
+                <H2>On January 22, 2006, Kobe Bryant scored the second highest point total in one game, how much did he score?</H2>
+                <input type="radio" id="q9" value"81">81
+                <input type="radio" id="q9" value"70">70
+                <input type="radio" id="q9" value"99">99
+                <input type="radio" id="q9" value"69">69
+
+                    <!-- 17 -->
+                <h2>At what age did Kobe Bryant start playing in the NBA?</h2>
+            <input type="radio" id="q10" value"21">21
+            <input type="radio" id="q10" value"20">20
+            <input type="radio" id="q10" value"18">18
+            <input type="radio" id="q10" value"17">17
+
+            <!-- End game button -->
+            <button id="done-button">Done</button>
+        </div>
+    </div>
+
+        <!--Final Score div  -->
+    <div id="stats">
+            <h1>Kobe Bryant Trivia</h1>
+
+            <h3>Finito</h3>
+
+            <h3>Correct Answers: <span id="correct-answers">0</span> </h3>
+            <h3>Wrong Answers: <span id="wrong-answers">0</span></h3>
+            <h3>Questions unanswered: <span id="unanswered-span">0</span></h3>
+            
+            
+        </div>
+    
+</body>
+</html>
