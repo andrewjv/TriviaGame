@@ -1,7 +1,7 @@
 var wins = 0;
-var losses = 0;
+var loss = 0;
 var unanswered = 0;
-var clock = 5;
+var clock = 60;
 var windingDown;
 
 $(document).ready(function () {
@@ -29,12 +29,13 @@ $(document).ready(function () {
         }, 1000);
         $('#done-button').on('click', function () {
             console.log('done');
-            clock = 0;
-            console.log(clock);
+            clock = -1;
+            checkAnswers()
+            $('#game-container').hide();
         })
     })
 
-   
+
 
 
 
@@ -64,16 +65,18 @@ $(document).ready(function () {
 
     // end game and check answers
     function checkAnswers() {
-        var Q1 = $('input:radio[name=q1]:checked').val();
-        var Q2 = $('input:radio[name=q2]:checked').val();
-        var Q3 = $('input:radio[name=q3]:checked').val();
-        var Q4 = $('input:radio[name=q4]:checked').val();
-        var Q5 = $('input:radio[name=q5]:checked').val();
-        var Q6 = $('input:radio[name=q6]:checked').val();
-        var Q7 = $('input:radio[name=q7]:checked').val();
-        var Q8 = $('input:radio[name=q8]:checked').val();
-        var Q9 = $('input:radio[name=q9]:checked').val();
-        var Q10 = $('input:radio[name=q10]:checked').val();
+        var Q1 = $('input:radio[id=q1]:checked').val();
+        var Q2 = $('input:radio[id=q2]:checked').val();
+        var Q3 = $('input:radio[id=q3]:checked').val();
+        var Q4 = $('input:radio[id=q4]:checked').val();
+        var Q5 = $('input:radio[id=q5]:checked').val();
+        var Q6 = $('input:radio[id=q6]:checked').val();
+        var Q7 = $('input:radio[id=q7]:checked').val();
+        var Q8 = $('input:radio[id=q8]:checked').val();
+        var Q9 = $('input:radio[id=q9]:checked').val();
+        var Q10 = $('input:radio[id=q10]:checked').val();
+
+        console.log(Q1)
 
         if (Q1 == undefined) {
             unanswered++;
@@ -168,7 +171,7 @@ $(document).ready(function () {
 
         //update stats
         $('#correct-answers').html(wins);
-        $('#wrong-answers').html(losses);
+        $('#wrong-answers').html(loss);
         $("unanswered-span").html(unanswered);
 
         $('#stats').show();
